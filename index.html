@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <script>
+        function allowDrop(ev){
+            ev.preventDefault(); //não deixar o navegador arrastar os objetos
+    
+        }
+    
+        //função arrasta, inicia um arrasto de elemento
+        //Setdata é um método pra escrever um dado
+        //dataTransfer, funcionalidades, transferencia de daddos
+        //set é escrever, arrastar
+        function drag(ev) {
+            ev.dataTransfer.setData("text", ev.target.id);
+        }  
+        
+        //drop vai soltar na div
+        //EV objeto de evento
+        function drop(ev){
+            ev.preventDefault();
+            var data = ev.dataTransfer.getData("text");
+            ev.target.appendChild(document.getElementById(data));
+        }
+    
+    
+    </script>
+</head>
+<style>
+    body{
+        background-color:rgb(153, 153, 250);
+    }
+    #div{
+        width: 350px;
+        height: 70px;
+        padding: 10px;
+        border: 1px solid rgb(0, 0, 0);
+    }
+</style>
+
+<body>
+    <!--ondrop especifica a função js a ser chamada quando o elemento é arrastadp spnre este elemento div-->
+    <div id="div" ondrop="drop(event)" ondragover="allowDrop(event)"> </div>
+    <p>arraste a imagem para dentro do retângulo</p>
+    <img  id="drag1" src="paisagem.jpg" draggable="true" ondragstart="drag(event)" width="336" height="69">
+
+
+</body>
+
+</html>
