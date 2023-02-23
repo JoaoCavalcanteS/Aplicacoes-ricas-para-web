@@ -10,11 +10,49 @@
 
 <body>
     <!--ondrop especifica a função js a ser chamada quando o elemento é arrastadp spnre este elemento div-->
-    <div id="div" ondrop="drop(event)" ondragover="allowDrop(event)"> </div>
+    <!-- <div id="div" ondrop="drop(event)" ondragover="allowDrop(event)"> </div>
     <p>arraste a imagem para dentro do retângulo</p>
 
     <img  id="drag1" src="paisagem.jpg" draggable="true" ondragstart="drag(event)" width="336" height="69">
-    <div id="div" ondrop="drop(event)" ondragover="allowDrop(event)"> </div>
+    <div id="div" ondrop="drop(event)" ondragover="allowDrop(event)"> </div> -->
+    <div id="tabela">
+        <div class="central"> 
+            <label for="">atividades</label>
+                <div id="lateral" ondrop="drop(event)" ondragover="allowDrop(event)"> 
+                    <textarea name="anotação" id="drag1" draggable="true" ondragstart="drag(event)" cols="47" rows="6 "></textarea>
+                </div>
+                <div id="lateral" ondrop="drop(event)" ondragover="allowDrop(event)"> 
+                    <textarea name="anotação" id="drag1" draggable="true" ondragstart="drag(event)" cols="47" rows="6 "></textarea>
+                </div>
+                <div id="lateral" ondrop="drop(event)" ondragover="allowDrop(event)"> 
+                    <textarea name="anotação" id="drag1" draggable="true" ondragstart="drag(event)" cols="47" rows="6 "></textarea>
+                </div>
+                <div id="lateral" ondrop="drop(event)" ondragover="allowDrop(event)"> 
+                    <textarea name="anotação" id="drag1" draggable="true" ondragstart="drag(event)" cols="47" rows="6 "></textarea>
+                </div>
+        </div>
+        <div class="central"> 
+            <label for="">em andamento</label>
+                <div id="lateral" ondrop="drop(event)" ondragover="allowDrop(event)"> </div>
+                <div id="lateral" ondrop="drop(event)" ondragover="allowDrop(event)"> </div>
+                <div id="lateral" ondrop="drop(event)" ondragover="allowDrop(event)"> </div>
+                <div id="lateral" ondrop="drop(event)" ondragover="allowDrop(event)"> </div>
+        </div>
+        <div class="central"> 
+            <label for="">concluídos</label>
+                <div id="lateral" ondrop="drop(event)" ondragover="allowDrop(event)"> </div>
+                <div id="lateral" ondrop="drop(event)" ondragover="allowDrop(event)"> </div>
+                <div id="lateral" ondrop="drop(event)" ondragover="allowDrop(event)"> </div>
+                <div id="lateral" ondrop="drop(event)" ondragover="allowDrop(event)"> </div>
+        </div>
+        <div class="central"> 
+            <label for="">aguardando terceiros</label>
+                <div id="lateral" ondrop="drop(event)" ondragover="allowDrop(event)"> </div>
+                <div id="lateral" ondrop="drop(event)" ondragover="allowDrop(event)"> </div>
+                <div id="lateral" ondrop="drop(event)" ondragover="allowDrop(event)"> </div>
+                <div id="lateral" ondrop="drop(event)" ondragover="allowDrop(event)"> </div>
+        </div>
+    </div>
 </body>
 <script src="script.js"></script>
 </html>

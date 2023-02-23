@@ -1,9 +1,44 @@
 body{
-    background-color:rgb(153, 153, 250);
+    background-color: rgb(255, 255, 255);
 }
 #div{
     width: 350px;
     height: 70px;
     padding: 10px;
     border: 1px solid rgb(0, 0, 0);
+}
+#drag1{
+
+    width: 345px;
+    height: 94px;
+}
+.central{
+    border: 1px solid rgb(0, 0, 0);
+    float: left;
+    background-color: rgb(175, 175, 212);
+    
+}
+#tabela{
+    border: 1px solid rgb(255, 0, 0);
+    margin-top: 7%;
+    padding: 3%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255, 0, 0);
+}
+#lateral{
+   
+    width: 350px;
+    height: 100px;
+    
+    /* border: 1px solid rgb(0, 0, 0); */
+    margin: 5px;
+    box-sizing:content-box;
+}
+label{
+    color:white;
+    margin-left: 20px;
+    
 }
