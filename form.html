@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="/section_page.php">
+        <fieldset>
+            <legend>Dados</legend>
+            <label for="nome">Nome:</label><br>
+            <input type="text" name="nome" id="nome" required><br>
+
+            <label for="nome">Sobrenome:</label><br>
+            <input type="text" name="sobrenome" id="sobrenome" required><br>
+
+            <label for="nome">CPF:</label><br>
+            <input type="text" name="cpf" id="cpf" required><br>
+
+            <label for="nome">Número de depedentes:</label><br>
+            <input type="number" name="depedentes" id="depedentes" min="0" max="10" required><br>
+
+
+            <label for="nome">Email:</label><br>
+            <input type="email" name="email" id="email" required><br>
+
+            <label for="nome">data de nascimento</label><br>
+            <input type="date" name="dt" id="dt" required>
+
+           <input type="submit" value="enviar">
+        </fieldset>
+    </form>
+</body>
+</html>
