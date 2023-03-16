@@ -1,0 +1,10 @@
+#input{
+    float: left;
+}
+#div1{
+    border: 7px dotted black;
+    width: 350px;
+    height: 350px;
+    text-align: center;
+ 
+}

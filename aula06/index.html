@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+   
+</head>
+<body>
+    <form id="form-tarefa">
+        <div> 
+            <label>Item para acrescentar na lista de compra:</label>
+            <input type="text" name="tarefa" id="tarefa">
+            <input type="submit" value="Adicionar Item" class="btn">
+        </div>
+    </form>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div>    
+        <label for="">Lista de compra:</label>
+        <ul class="collection"></ul>
+    </div>
+    <br>
+    <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
+        <div id="drag1"  draggable="true" ondragstart="drag(event)">carrinho de compra (arraste os itens aqui)</div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
