@@ -76,6 +76,7 @@ function adicioneTarefa(evento){
     listaDeTarefas.appendChild(LI);
     
 
+    
     gravarTarefa(inputTarefa.value);
     inputTarefa.value = '';
     
@@ -99,6 +100,7 @@ function gravarTarefa(tarefa){
     //Grava o novo JSON no sessionStorage
     sessionStorage.setItem('tarefas', JSON.stringify(tarefas));
 }
+
 
 
 function gravarCarrinho(div1){
@@ -141,5 +143,9 @@ function drop(ev){
     ev.target.appendChild(document.getElementById(data));
     
 }
-var LI = document.getElementsByTagName(li);
+function inicia(){
+    var LI = document.getElementsByTagName('li');
+    LI = document.getElementById('drag1')
+    LI = drag(LI);
 LI
+}
