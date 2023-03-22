@@ -28,6 +28,13 @@ function recuperaTarefas(evento){
     tarefas.forEach(function(tarefa){
         const LI = document.createElement('li');
         LI.className='collection-item';
+
+        LI.addEventListener('drag', () => { 
+           
+                ev.dataTransfer.setData("text", ev.target.id);
+            
+            
+        })
         LI.appendChild(document.createTextNode(tarefa));
     
         //cria aonde vai ficar o x para apagar a tarefa    
