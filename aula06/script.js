@@ -32,7 +32,7 @@ function recuperaTarefas(evento){
         LI.addEventListener('drag', () => { 
            
                 ev.dataTransfer.setData("text", ev.target.id);
-            
+                
             
         })
         LI.appendChild(document.createTextNode(tarefa));
