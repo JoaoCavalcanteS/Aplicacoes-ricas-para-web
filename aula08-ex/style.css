@@ -1,0 +1,26 @@
+.div{
+    margin-left: 20%;
+    margin-right: 20%;
+    height: 580px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+}
+.btn2{
+    top: 440px;
+    left: 320px;
+    position:absolute;
+    margin-left: 20%;
+    margin-right: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: antiquewhite;
+}
+/* #btn1, #btn2, #btn3, #btn4, #btn5, #btn6{
+    position: absolute;
+    margin-top: 20%;
+    margin-left: 10px;
+    margin-right: 30%;
+} */
